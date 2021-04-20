@@ -1,0 +1,98 @@
+.about-us-area{
+    padding: 70px 0;
+    border-bottom: 2px solid #f2f2f2;
+}
+.section-title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 5px;
+}
+.section-border span{
+    height: 5px;
+    background: #13287e;
+    width: 40px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.section-border span.black-border{
+    background: #333;
+    width: 25px;
+    margin: 0px 5px;
+}
+
+.single-service-item{
+    margin-bottom: 27px;
+}
+.service-bordered-img{
+    background: #ddd;
+    height: 120px;
+    width: 99px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 3px;
+
+}
+.service-bordered-img:after{
+    background: #13287e;
+    position: absolute;
+    content: "";
+    left: 6px;
+    top: 6px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 3px;
+}
+.service-img-1{
+    background-image: url("https://i.ibb.co/nPxTVML/Clany-1.jpg");
+}
+.service-img-2{
+    background-image: url("https://i.ibb.co/Ctw76bm/Clany-2.jpg")
+}
+.service-img-3{
+    background-image: url("https://i.ibb.co/gtmcXJt/Clany-3.jpg")
+}
+.single-service-item h3{
+    border-bottom: 1px dashed #13287e;
+    font-size: 18px;
+    padding-bottom: 18px;
+    font-weight: 500;
+    margin: 6px 0px 18px;
+}
+.big-service-img{
+    background-image: url("https://i.ibb.co/0FqK3Qq/about-us.jpg");
+    height: 490px; 
+    margin-left: 40px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+}
+.-service-img:before{
+    background: #000;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.big-service-img:after{
+    background: #13287e;
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: 12px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+.review-area{
+    padding: 70px 0;
+    background: #f2f2f2
+}
+.section-title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: capitalize;
+    position: relative;
+}
+.section-border span{
+    height: 5px;
+    background: #13287e;
+    width: 40px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.section-border span.black-border{
+    background: #333;
+    width: 25px;
+    margin: 0px 5px;
+}
+.single-testimonial-item .quote-icon a svg{
+    color: #13287e;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.review-info{
+    border-left: 1px solid #e2e2e2;
+    padding-left: 20px
+}
+
+.single-testimonial-item{
+   box-shadow: 0 5px 10px #333;
+   margin-bottom: 15px;
+   padding: 20px 20px 20px 20px;
+   position: relative;
+   border-radius: 5px;
+}
+.single-testimonial-item p{
+    font-style: italic;
+}
+.single-testimonial-item a svg{
+    color:#F7C900;
+}
+.single-testimonial-item h4{
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: #222;
+    margin-bottom: 0px;
+    font-weight: 700;
+}

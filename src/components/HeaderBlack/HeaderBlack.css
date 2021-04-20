@@ -1,0 +1,24 @@
+.header{
+    padding: 10px 0;
+}
+.header h3{
+    font-size: 30px;
+    color: #13287e;
+}
+.customNavBar a {
+    padding-right: 2.5rem!important;
+    font-weight:600!important;
+    color: #13287e!important;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.customNavBar a:hover{
+    text-decoration: none;
+    transform: scale(1.05);
+}
+.customButton{
+    width: 130px;
+    background-color: #13287e!important;
+    border-color: #13287e!important;
+    color: #fff!important;
+}
