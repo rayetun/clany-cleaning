@@ -3,6 +3,7 @@ import { Container, Row, Spinner } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
+import Payment from '../Payment/Payment';
 import './CheckOutPage.css';
 
 const CheckOutPage = (props) => {
@@ -79,8 +80,12 @@ const CheckOutPage = (props) => {
                                     </tr>
                                 </thead>
                             </table>
-
                         </div>
+                    </div>
+                </Row>
+                <Row>
+                    <div className="col-md-12">
+                        <Payment></Payment>
                     </div>
                 </Row>
             </Container>

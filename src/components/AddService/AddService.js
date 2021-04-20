@@ -4,8 +4,9 @@ import Accordion from 'react-bootstrap/Accordion'
 import './AddService.css'
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 import axios from 'axios';
+import OrderPage from '../OrderPage/OrderPage';
 import AddReview from '../AddReview/AddReview';
-import DeleteProduct from '../DeleteProduct/DeleteProduct';
+import DeleteService from '../DeleteService/DeleteService';
 
 
 
@@ -59,20 +60,22 @@ const AddService = () => {
         <Accordion defaultActiveKey="0">
             <div className="container">
                 <div className="row mt-5">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="admin-menu">
-                            <h3>Fabulous Flower</h3>
+                            <h3>Clany</h3>
                             <ul>
                                 <li><CustomToggle eventKey="0">Add Service</CustomToggle></li>
-                                <li><CustomToggle eventKey="1">Add Review</CustomToggle></li>
-                                <li><CustomToggle eventKey="2">Manage Service</CustomToggle></li>
+                                <li><CustomToggle eventKey="1">Manage Service</CustomToggle></li>
+                                <li><CustomToggle eventKey="2">Manage Order</CustomToggle></li>
+                                <li><CustomToggle eventKey="3">Write Review</CustomToggle></li>
+                                <li><CustomToggle eventKey="4">Order Update</CustomToggle></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-9">
                     <Accordion.Collapse eventKey="0">
                         <div className="product-form">
-                            <h3>Add New Flower</h3>
+                            <h3>Add New Service</h3>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <label>
                                 Service Title:
@@ -95,10 +98,13 @@ const AddService = () => {
                         </div>
                     </Accordion.Collapse>
                     <Accordion.Collapse eventKey="1">
-                        <AddReview></AddReview>
+                        <DeleteService></DeleteService>
                     </Accordion.Collapse>
                     <Accordion.Collapse eventKey="2">
-                        <DeleteProduct></DeleteProduct>
+                        <OrderPage></OrderPage>
+                    </Accordion.Collapse>
+                    <Accordion.Collapse eventKey="3">
+                        <AddReview></AddReview>
                     </Accordion.Collapse>
                     </div>
                 </div> 

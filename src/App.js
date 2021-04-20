@@ -28,9 +28,6 @@ function App() {
           <PrivateRoute path="/admin">
             <Admin></Admin>
           </PrivateRoute>
-          <PrivateRoute path="/order">
-            <OrderPage></OrderPage>
-            </PrivateRoute>
           <PrivateRoute path="/checkout/:_id">
           <CheckOutPage></CheckOutPage>
           </PrivateRoute>

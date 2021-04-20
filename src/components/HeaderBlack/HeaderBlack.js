@@ -13,14 +13,13 @@ const HeaderBlack = () => {
                 <div className="col">
                     <Navbar sticky="true" className="customNavBar">
                         <Navbar.Brand href="/">
-                            <h3>Fabulous Flower</h3>
+                            <h3>Clany</h3>
                         </Navbar.Brand>
                         <Nav className="ml-auto customNav">
                             <Link to="/">Home</Link>
                             <Link to="/admin">Dashboard</Link>
-                            <Link to="/order">Order</Link>
                             <Link to="#">{loggedInUser.displayName}</Link>
-                            <Link to={`/login`}>
+                            <Link className="login-btn" to={`/login`}>
                                 {
                                     loggedInUser.email ? <Button className="customButton" onClick={() => setLoggedInUser({})}>Log Out</Button>
                                         : <Button className="customButton" >Login</Button>

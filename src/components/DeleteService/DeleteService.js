@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import './DeleteProduct.css'
+import './DeleteService.css'
 
 
-const DeleteProduct = () => {
-    const [flowers, setFlowers] = useState([]);
+const DeleteService = () => {
+    const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/flowers')
+        fetch('http://localhost:8000/services')
         .then(res => res.json())
-        .then(data => setFlowers(data))
+        .then(data => setServices(data))
     }, [])
 
-    const deleteFlower = (id) => {
+    const deleteService = (id) => {
         const url =`http://localhost:8000/delete/${id}`;
         fetch(url, {
             method: 'DELETE'
@@ -29,19 +29,17 @@ const DeleteProduct = () => {
                     <table className="table table-stripped">
                     <thead>
                         <tr>
-                        <th scope="col">Flower Name</th>
-                        <th scope="col">Flower Color</th>
-                        <th scope="col">Flower Price</th>
+                        <th scope="col">Service Name</th>
+                        <th scope="col">Service Price</th>
                         <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    {flowers.map(flowers => 
+                    {services.map(services => 
                     <tbody>
                         <tr>
-                            <td className="special-td">{flowers.name}</td>
-                            <td>{flowers.color}</td>
-                            <td>{flowers.price}</td>
-                            <Button onClick={() => deleteFlower(flowers._id)}>Delete</Button>
+                            <td className="special-td">{services.name}</td>
+                            <td>{services.price}</td>
+                            <Button onClick={() => deleteService(services._id)}>Delete</Button>
                         </tr>
                     </tbody>
                     )}
@@ -52,4 +50,4 @@ const DeleteProduct = () => {
     );
 };
 
-export default DeleteProduct;
+export default DeleteService;
