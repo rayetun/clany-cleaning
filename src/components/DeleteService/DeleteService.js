@@ -7,13 +7,13 @@ import './DeleteService.css'
 const DeleteService = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/services')
+        fetch('https://radiant-stream-26422.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     }, [])
 
     const deleteService = (id) => {
-        const url =`http://localhost:8000/delete/${id}`;
+        const url =`https://radiant-stream-26422.herokuapp.com/delete/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

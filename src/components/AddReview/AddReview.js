@@ -24,7 +24,7 @@ const AddReview = () => {
             name: data.name,
             desc: data.description,
         };
-        const url =`http://localhost:8000/addReview`;
+        const url =`https://radiant-stream-26422.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {

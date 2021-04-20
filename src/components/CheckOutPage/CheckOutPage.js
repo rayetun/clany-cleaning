@@ -14,7 +14,7 @@ const CheckOutPage = (props) => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/services')
+        fetch('https://radiant-stream-26422.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     }, [])
@@ -30,7 +30,7 @@ const CheckOutPage = (props) => {
             userEmail: loggedInUser.email,
             orderTime: new Date().toDateString('dd/M/yyyy'),
         };
-        const url =`http://localhost:8000/addNewOrder`;
+        const url =`https://radiant-stream-26422.herokuapp.com/addNewOrder`;
         fetch(url, {
             method: 'POST',
             headers: {

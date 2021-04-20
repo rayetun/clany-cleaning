@@ -31,7 +31,7 @@ const AddService = () => {
             price: data.price,
             imageURL: imageURL
         };
-        const url =`http://localhost:8000/addServices`;
+        const url =`https://radiant-stream-26422.herokuapp.com/addServices`;
         fetch(url, {
             method: 'POST',
             headers: {

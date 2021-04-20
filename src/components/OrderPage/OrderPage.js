@@ -9,7 +9,7 @@ const OrderPage = () => {
 
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/serviceOrders?email='+loggedInUser.email)
+        fetch('https://radiant-stream-26422.herokuapp.com/serviceOrders?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
